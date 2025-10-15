@@ -13,14 +13,15 @@ void afficherCouleur () {
 }
  }
 
-//  void main() {
+ void main() {
 
-// class r = Couleur.rouge ();
-// class v = Couleur.vert ();
-// class b = Couleur.bleu ();
+Couleur r = Couleur.rouge();
+Couleur v = Couleur.vert();
+Couleur b = Couleur.bleu();
 
-// r.afficherCouleur();
-// v.afficherCouleur();
-// b.afficherCouleur();
+
+r.afficherCouleur();
+v.afficherCouleur();
+b.afficherCouleur();
  
-//  }
+ }
