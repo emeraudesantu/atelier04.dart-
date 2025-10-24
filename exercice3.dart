@@ -10,7 +10,7 @@ class Compte {
   String get solde => "${_solde.toStringAsFixed(2)} \$";
 
 
-  void depot(double montant) {
+ void depot(double montant) {
     if (montant > 0) {
       _solde += montant;
       // Optionnel : afficher confirmation du dépôt
@@ -21,5 +21,10 @@ class Compte {
     }
   }
 
-
+  // Méthode utilitaire (non demandée mais pratique) : afficher le solde
+  void afficherSolde() {
+    print("Solde du compte $numeroCompte : ${solde}");
+  }
 }
+
+
