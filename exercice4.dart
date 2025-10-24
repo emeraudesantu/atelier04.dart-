@@ -33,3 +33,18 @@ class Film extends Media {
     print("Ceci est un Film : $titre ($dureeMinutes minutes).");
   }
 }
+
+
+void main() {
+ 
+  List<Media> catalogue = [];
+
+  catalogue.add(Livre("1984", "George Orwell"));
+  catalogue.add(Livre("Le Petit Prince", "Antoine de Saint-Exupéry"));
+  catalogue.add(Film("Inception", 148));
+  catalogue.add(Film("Avatar", 162));
+
+  for (var media in catalogue) {
+    media.afficherType();
+  }
+}
