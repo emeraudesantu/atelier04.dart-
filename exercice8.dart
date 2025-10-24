@@ -17,4 +17,18 @@ class Roman extends Livre {
 
   Roman(String titre, String auteur, this._prix) : super(titre, auteur);
 
+ @override
+  void display() {
+    super.display();
+    print("Prix : $_prix \$");
+  }
+}
+
+void main() {
+
+  var livre1 = Livre("Le Petit Prince", "Antoine de Saint-Exupéry");
+  livre1.display();
+
+  var roman1 = Roman("Les Misérables", "Victor Hugo", 25.50);
+  roman1.display();
 }
