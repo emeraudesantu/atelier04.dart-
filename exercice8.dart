@@ -10,3 +10,11 @@ class Livre {
     print("Titre : $_titre, Auteur : $_auteur");
   }
 }
+
+class Roman extends Livre {
+
+  double _prix;
+
+  Roman(String titre, String auteur, this._prix) : super(titre, auteur);
+
+}
