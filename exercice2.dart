@@ -9,5 +9,9 @@ class Point {
     _x += dx;
     _y += dy;
   }
+ 
 
+ void display() {
+    print('Point(x: $_x, y: $_y)');
+  } 
 }
